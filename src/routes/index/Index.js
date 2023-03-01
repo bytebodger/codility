@@ -8,14 +8,32 @@ export const Index = () => {
       </div>
       <br/>
       <div>
-         <a href={'/odd-occurrences-in-array'}>
-            OddOccurrencesInArray
+         <a href={'/centipede-game'}>
+            CentipedeGame
          </a>
       </div>
       <br/>
       <div>
          <a href={'/frog-jmp'}>
             FrogJmp
+         </a>
+      </div>
+      <br/>
+      <div>
+         <a href={'/frog-river-one'}>
+            FrogRiverOne
+         </a>
+      </div>
+      <br/>
+      <div>
+         <a href={'/odd-occurrences-in-array'}>
+            OddOccurrencesInArray
+         </a>
+      </div>
+      <br/>
+      <div>
+         <a href={'/perm-check'}>
+            PermCheck
          </a>
       </div>
       <br/>
@@ -28,12 +46,6 @@ export const Index = () => {
       <div>
          <a href={'/tape-equilibrium'}>
             TapeEquilibrium
-         </a>
-      </div>
-      <br/>
-      <div>
-         <a href={'/frog-river-one'}>
-            FrogRiverOne
          </a>
       </div>
    </>

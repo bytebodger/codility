@@ -6,6 +6,8 @@ import { FrogJmp } from './routes/frog-jmp/FrogJmp';
 import { PermMissingElem } from './routes/perm-missing-elem/PermMissingElem';
 import { TapeEquilibrium } from './routes/tape-equilibrium/TapeEquilibrium';
 import { FrogRiverOne } from './routes/frog-river-one/FrogRiverOne';
+import { PermCheck } from './routes/perm-check/PermCheck';
+import { CentipedeGame } from './routes/centipede-game/CentipedeGame';
 
 export const UI = () => {
    return <>
@@ -14,6 +16,10 @@ export const UI = () => {
             <Route
                element={<BinaryGap/>}
                path={'/binary-gap'}
+            />
+            <Route
+               element={<CentipedeGame/>}
+               path={'/centipede-game'}
             />
             <Route
                element={<FrogJmp/>}
@@ -35,6 +41,10 @@ export const UI = () => {
             <Route
                element={<OddOccurrencesInArray/>}
                path={'/odd-occurrences-in-array'}
+            />
+            <Route
+               element={<PermCheck/>}
+               path={'/perm-check'}
             />
             <Route
                element={<PermMissingElem/>}
