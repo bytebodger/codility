@@ -4,6 +4,7 @@ import { BinaryGap } from './routes/binary-gap/BinaryGap';
 import { OddOccurrencesInArray } from './routes/odd-occurrences-in-array/OddOccurrencesInArray';
 import { FrogJmp } from './routes/frog-jmp/FrogJmp';
 import { PermMissingElem } from './routes/perm-missing-elem/PermMissingElem';
+import { TapeEquilibrium } from './routes/tape-equilibrium/TapeEquilibrium';
 
 export const UI = () => {
    return <>
@@ -33,6 +34,10 @@ export const UI = () => {
             <Route
                element={<PermMissingElem/>}
                path={'/perm-missing-elem'}
+            />
+            <Route
+               element={<TapeEquilibrium/>}
+               path={'/tape-equilibrium'}
             />
          </Routes>
       </div>

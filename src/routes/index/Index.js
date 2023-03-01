@@ -24,5 +24,11 @@ export const Index = () => {
             PermMissingElem
          </a>
       </div>
+      <br/>
+      <div>
+         <a href={'/tape-equilibrium'}>
+            TapeEquilibrium
+         </a>
+      </div>
    </>
 }
