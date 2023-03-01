@@ -18,5 +18,11 @@ export const Index = () => {
             FrogJmp
          </a>
       </div>
+      <br/>
+      <div>
+         <a href={'/perm-missing-elem'}>
+            PermMissingElem
+         </a>
+      </div>
    </>
 }

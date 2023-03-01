@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import { Index } from './routes/index/Index';
-import { BinaryGap } from './routes/binaryGap/BinaryGap';
-import { OddOccurrencesInArray } from './routes/oddOccurrencesInArray/OddOccurrencesInArray';
-import { FrogJmp } from './routes/frogJmp/FrogJmp';
+import { BinaryGap } from './routes/binary-gap/BinaryGap';
+import { OddOccurrencesInArray } from './routes/odd-occurrences-in-array/OddOccurrencesInArray';
+import { FrogJmp } from './routes/frog-jmp/FrogJmp';
+import { PermMissingElem } from './routes/perm-missing-elem/PermMissingElem';
 
 export const UI = () => {
    return <>
@@ -28,6 +29,10 @@ export const UI = () => {
             <Route
                element={<OddOccurrencesInArray/>}
                path={'/odd-occurrences-in-array'}
+            />
+            <Route
+               element={<PermMissingElem/>}
+               path={'/perm-missing-elem'}
             />
          </Routes>
       </div>
