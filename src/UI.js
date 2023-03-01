@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Index } from './routes/index/Index';
 import { BinaryGap } from './routes/binaryGap/BinaryGap';
+import { OddOccurrencesInArray } from './routes/oddOccurrencesInArray/OddOccurrencesInArray';
 
 export const UI = () => {
    return <>
@@ -18,6 +19,10 @@ export const UI = () => {
             <Route
                element={<Index/>}
                path={'*'}
+            />
+            <Route
+               element={<OddOccurrencesInArray/>}
+               path={'/odd-occurrences-in-array'}
             />
          </Routes>
       </div>

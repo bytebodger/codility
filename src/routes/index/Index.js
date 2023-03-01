@@ -6,5 +6,11 @@ export const Index = () => {
             BinaryGap
          </a>
       </div>
+      <br/>
+      <div>
+         <a href={'/odd-occurrences-in-array'}>
+            OddOccurrencesInArray
+         </a>
+      </div>
    </>
 }

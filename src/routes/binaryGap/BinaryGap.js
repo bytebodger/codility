@@ -1,10 +1,10 @@
 export const BinaryGap = () => {
    const getBinaryGap = integer => {
       let binaryString = integer.toString(2);
-      binaryString = binaryString.split('0').filter(Boolean).join('0');
       let gap = 0;
-      binaryString.split('1').forEach(zeroes => {
-         if (zeroes.length > gap)
+      const blocksOfZeroes = binaryString.split('1');
+      blocksOfZeroes.forEach((zeroes, index) => {
+         if (index !== 0 && index !== blocksOfZeroes.length - 1 && zeroes.length > gap)
             gap = zeroes.length;
       })
       return gap;
@@ -31,12 +31,17 @@ export const BinaryGap = () => {
          <br/><br/>
          N is an integer within the range [1..2,147,483,647].
       </div>
+      <br/>
       <div>
          Examples:
          <br/><br/>
-         1041 = {getBinaryGap(1041)}
+         1041 (10000010001) = {getBinaryGap(1041)}
          <br/>
-         32 = {getBinaryGap(32)}
+         32 (100000) = {getBinaryGap(32)}
+         <br/>
+         483 (111100011) = {getBinaryGap(483)}
+         <br/>
+         647 (1010000111) = {getBinaryGap(647)}
       </div>
    </>
 }
