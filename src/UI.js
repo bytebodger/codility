@@ -5,6 +5,7 @@ import { OddOccurrencesInArray } from './routes/odd-occurrences-in-array/OddOccu
 import { FrogJmp } from './routes/frog-jmp/FrogJmp';
 import { PermMissingElem } from './routes/perm-missing-elem/PermMissingElem';
 import { TapeEquilibrium } from './routes/tape-equilibrium/TapeEquilibrium';
+import { FrogRiverOne } from './routes/frog-river-one/FrogRiverOne';
 
 export const UI = () => {
    return <>
@@ -17,6 +18,10 @@ export const UI = () => {
             <Route
                element={<FrogJmp/>}
                path={'/frog-jmp'}
+            />
+            <Route
+               element={<FrogRiverOne/>}
+               path={'/frog-river-one'}
             />
             <Route
                element={<Index/>}

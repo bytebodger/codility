@@ -30,5 +30,11 @@ export const Index = () => {
             TapeEquilibrium
          </a>
       </div>
+      <br/>
+      <div>
+         <a href={'/frog-river-one'}>
+            FrogRiverOne
+         </a>
+      </div>
    </>
 }

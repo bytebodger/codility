@@ -20,16 +20,14 @@ export const PermMissingElem = () => {
          }
       })
       const entries = Object.entries(arrayInfo);
-      let missingElement = null;
-      for (let i = 0; i < entries.length && missingElement === null; i++) {
+      for (let i = 0; i < entries.length; i++) {
          let [value, valueInfo] = entries[i];
          value = parseInt(value, 10);
          if (value !== smallestValue && !valueInfo.oneBelowExists)
-            missingElement = value - 1;
+            return value - 1;
          else if (value !== largestValue && !valueInfo.oneAboveExists)
-            missingElement = value + 1;
+            return value + 1;
       }
-      return missingElement;
    }
 
    return <>
