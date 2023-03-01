@@ -48,5 +48,11 @@ export const Index = () => {
             TapeEquilibrium
          </a>
       </div>
+      <br/>
+      <div>
+         <a href={'/words-from-inventory'}>
+            WordsFromInventory
+         </a>
+      </div>
    </>
 }

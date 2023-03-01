@@ -8,6 +8,7 @@ import { TapeEquilibrium } from './routes/tape-equilibrium/TapeEquilibrium';
 import { FrogRiverOne } from './routes/frog-river-one/FrogRiverOne';
 import { PermCheck } from './routes/perm-check/PermCheck';
 import { CentipedeGame } from './routes/centipede-game/CentipedeGame';
+import { WordsFromInventory } from './routes/words-from-inventory/WordsFromInventory';
 
 export const UI = () => {
    return <>
@@ -53,6 +54,10 @@ export const UI = () => {
             <Route
                element={<TapeEquilibrium/>}
                path={'/tape-equilibrium'}
+            />
+            <Route
+               element={<WordsFromInventory/>}
+               path={'/words-from-inventory'}
             />
          </Routes>
       </div>

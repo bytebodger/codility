@@ -1,29 +1,4 @@
 export const PermCheck = () => {
-   const getMaxAllWordsFromInventory = (inventory, words) => {
-      let maximum = 0;
-      words.forEach(word => {
-         let count = 0;
-         const inventoryArray = inventory.split('');
-         const wordArray = word.split('');
-         if (wordArray.length > inventoryArray.length)
-            return;
-         while (inventoryArray.length >= wordArray.length) {
-            for (let i = 0; i < wordArray.length; i++) {
-               const letter = wordArray[i];
-               const targetIndex = inventoryArray.indexOf(letter);
-               if (targetIndex === -1)
-                  return;
-               inventoryArray.splice(targetIndex, 1);
-            }
-            count++;
-            if (count > maximum)
-               maximum = count;
-         }
-      })
-      return maximum;
-   }
-
-
    const isAPermutation = array => {
       const slots = {};
       const minimumValue = Math.min(...array);
@@ -90,14 +65,6 @@ export const PermCheck = () => {
          [4, 1, 3, 2] = {isAPermutation([4, 1, 3, 2])}
          <br/>
          [4, 1, 3] = {isAPermutation([4, 1, 3])}
-      </div>
-      <br/>
-      <div>
-      'BILLOBILLOLLOBBI', ['BILL', 'BOB'] = {getMaxAllWordsFromInventory('BILLOBILLOLLOBBI', ['BILL', 'BOB'])}
-      <br/>
-      'CAT', ['ILOVEMYDOG', 'CATS'] = {getMaxAllWordsFromInventory('CAT', ['ILOVEMYDOG', 'CATS'])}
-      <br/>
-      'ABCDXYZ', ['ABCD', 'XYZ'] = {getMaxAllWordsFromInventory('ABCDXYZ', ['ABCD', 'XYZ'])}
       </div>
    </>
 }
