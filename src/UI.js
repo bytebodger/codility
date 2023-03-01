@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Index } from './routes/index/Index';
 import { BinaryGap } from './routes/binaryGap/BinaryGap';
 import { OddOccurrencesInArray } from './routes/oddOccurrencesInArray/OddOccurrencesInArray';
+import { FrogJmp } from './routes/frogJmp/FrogJmp';
 
 export const UI = () => {
    return <>
@@ -10,6 +11,10 @@ export const UI = () => {
             <Route
                element={<BinaryGap/>}
                path={'/binary-gap'}
+            />
+            <Route
+               element={<FrogJmp/>}
+               path={'/frog-jmp'}
             />
             <Route
                element={<Index/>}

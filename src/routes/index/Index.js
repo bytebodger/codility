@@ -12,5 +12,11 @@ export const Index = () => {
             OddOccurrencesInArray
          </a>
       </div>
+      <br/>
+      <div>
+         <a href={'/frog-jmp'}>
+            FrogJmp
+         </a>
+      </div>
    </>
 }
