@@ -1,6 +1,6 @@
 export const BinaryGap = () => {
    const getBinaryGap = integer => {
-      let binaryString = integer.toString(2);
+      let binaryString = Number(integer).toString(2);
       let gap = 0;
       const blocksOfZeroes = binaryString.split('1');
       blocksOfZeroes.forEach((zeroes, index) => {
