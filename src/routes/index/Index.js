@@ -26,6 +26,12 @@ export const Index = () => {
       </div>
       <br/>
       <div>
+         <a href={'/least-cost-matrix'}>
+            LeastCostMatrix
+         </a>
+      </div>
+      <br/>
+      <div>
          <a href={'/odd-occurrences-in-array'}>
             OddOccurrencesInArray
          </a>

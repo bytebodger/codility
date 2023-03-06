@@ -9,54 +9,71 @@ import { FrogRiverOne } from './routes/frog-river-one/FrogRiverOne';
 import { PermCheck } from './routes/perm-check/PermCheck';
 import { CentipedeGame } from './routes/centipede-game/CentipedeGame';
 import { WordsFromInventory } from './routes/words-from-inventory/WordsFromInventory';
+import { LeastCostMatrix } from './routes/least-cost-matrix/LeastCostMatrix';
 
 export const UI = () => {
+   const binaryGap = <BinaryGap/>;
+   const centipedeGame = <CentipedeGame/>;
+   const frogJmp = <FrogJmp/>;
+   const frogRiverOne = <FrogRiverOne/>;
+   const index = <Index/>;
+   const leastCostMatrix = <LeastCostMatrix/>;
+   const oddOccurrencesInArray = <OddOccurrencesInArray/>;
+   const permCheck = <PermCheck/>;
+   const permMissingElem = <PermMissingElem/>;
+   const tapeEquilibrium = <TapeEquilibrium/>;
+   const wordsFromInventory = <WordsFromInventory/>;
+
    return <>
       <div  style={{marginLeft: 50, marginTop: 50, width: 1000}}>
          <Routes>
             <Route
-               element={<BinaryGap/>}
+               element={binaryGap}
                path={'/binary-gap'}
             />
             <Route
-               element={<CentipedeGame/>}
+               element={centipedeGame}
                path={'/centipede-game'}
             />
             <Route
-               element={<FrogJmp/>}
+               element={frogJmp}
                path={'/frog-jmp'}
             />
             <Route
-               element={<FrogRiverOne/>}
+               element={frogRiverOne}
                path={'/frog-river-one'}
             />
             <Route
-               element={<Index/>}
+               element={index}
                index={true}
                path={'/'}
             />
             <Route
-               element={<Index/>}
+               element={index}
                path={'*'}
             />
             <Route
-               element={<OddOccurrencesInArray/>}
+               element={leastCostMatrix}
+               path={'/least-cost-matrix'}
+            />
+            <Route
+               element={oddOccurrencesInArray}
                path={'/odd-occurrences-in-array'}
             />
             <Route
-               element={<PermCheck/>}
+               element={permCheck}
                path={'/perm-check'}
             />
             <Route
-               element={<PermMissingElem/>}
+               element={permMissingElem}
                path={'/perm-missing-elem'}
             />
             <Route
-               element={<TapeEquilibrium/>}
+               element={tapeEquilibrium}
                path={'/tape-equilibrium'}
             />
             <Route
-               element={<WordsFromInventory/>}
+               element={wordsFromInventory}
                path={'/words-from-inventory'}
             />
          </Routes>
