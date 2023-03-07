@@ -1,5 +1,5 @@
 export const CentipedeGame = () => {
-   const getFinalMessage = (assignedLetters, mustPassTo) => {
+   const getFinalMessage = (assignedLetters = '', mustPassTo = []) => {
       const letterArray = assignedLetters.split('');
       const getMessage = (message, position) => {
          if (position === 0 && (message || !letterArray.length))
