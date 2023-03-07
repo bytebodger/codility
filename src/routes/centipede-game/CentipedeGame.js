@@ -1,15 +1,13 @@
 export const CentipedeGame = () => {
-   const getFinalMessage = (letters, turns) => {
-      const letterArray = letters.split('');
-      let message = '';
-      let k = 0;
-      for (let i = 0; i < letters.length; i++) {
-         message += letterArray[k];
-         k = turns[k];
-         if (k === 0)
+   const getFinalMessage = (assignedLetters, mustPassTo) => {
+      const letterArray = assignedLetters.split('');
+      const getMessage = (message, position) => {
+         if (position === 0 && (message || !letterArray.length))
             return message;
+         const currentMessage = message + letterArray[position];
+         return getMessage(currentMessage, mustPassTo[position]);
       }
-      return message;
+      return getMessage('', 0);
    }
 
    return <>
